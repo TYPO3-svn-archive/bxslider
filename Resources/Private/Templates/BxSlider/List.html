@@ -8,11 +8,11 @@
                 </li>
             </f:for>
         </ul>
+        <script type="text/javascript">
+            var sliderSettings = <f:format.htmlentitiesDecode>{sliderSettings}</f:format.htmlentitiesDecode>;
+            $(document).ready(function() {
+                $('.bxslider#bxslider<f:format.htmlentitiesDecode>{bxSlider.uid}</f:format.htmlentitiesDecode>').bxSlider(sliderSettings);
+            });
+        </script>
     </f:for>
-    <script type="text/javascript">
-        var sliderSettings = <f:format.htmlentitiesDecode>{sliderSettings}</f:format.htmlentitiesDecode>;
-        $(document).ready(function() {
-            $('.bxslider').bxSlider(sliderSettings);
-        });
-    </script>
 </f:section>
