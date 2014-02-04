@@ -1,0 +1,619 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.general.form>
+                        <TCEforms>
+                            <label>LLL:EXT:powermail/Resources/Private/Language/locallang_db.xml:flexform.general.form</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+
+                                </items>
+                                <maxitems>100</maxitems>
+                                <size>4</size>
+                                <autoSizeMax>10</autoSizeMax>
+                                <minitems>1</minitems>
+                                <foreign_table>tx_bxslider_domain_model_bxslider</foreign_table>
+                                <foreign_table_where>AND tx_bxslider_domain_model_bxslider.deleted = 0 AND tx_bxslider_domain_model_bxslider.hidden = 0 AND tx_bxslider_domain_model_bxslider.sys_language_uid = 0 order by tx_bxslider_domain_model_bxslider.name</foreign_table_where>
+                                <requestUpdate>1</requestUpdate>
+                                <wizards>
+                                    <_PADDING>16</_PADDING>
+                                    <_VERTICAL></_VERTICAL>
+                                    <add>
+                                        <type>script</type>
+                                        <title>Add Form</title>
+                                        <icon>add.gif</icon>
+                                        <params>
+                                            <table>tx_bxslider_domain_model_bxslider</table>
+                                            <pid>###CURRENT_PID###</pid>,
+                                            <setValue>set</setValue>
+                                        </params>
+                                        <script>wizard_add.php</script>
+                                    </add>
+                                    <suggest>
+                                        <title>Add Form</title>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.general.form>
+                </el>
+            </ROOT>
+        </general>
+
+        <settings>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.settings.mode>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.mode</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">horizontal</numIndex>
+                                        <numIndex index="1">horizontal</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">vertical</numIndex>
+                                        <numIndex index="1">vertical</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">fade</numIndex>
+                                        <numIndex index="1">fade</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <default>horizontal</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.mode>
+
+                    <settings.flexform.settings.speed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.speed</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>500</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.speed>
+
+                    <settings.flexform.settings.slideMargin>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.slideMargin</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.slideMargin>
+
+                    <settings.flexform.settings.startSlide>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.startSlide</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.startSlide>
+
+                    <settings.flexform.settings.randomStart>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.randomStart</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.randomStart>
+
+                    <settings.flexform.settings.infiniteLoop>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.infiniteLoop</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.infiniteLoop>
+
+                    <settings.flexform.settings.hideControlOnEnd>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.hideControlOnEnd</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.hideControlOnEnd>
+
+                    <settings.flexform.settings.captions>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.captions</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.captions>
+
+                    <settings.flexform.settings.ticker>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.ticker</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.ticker>
+
+                    <settings.flexform.settings.tickerHover>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.tickerHover</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.tickerHover>
+
+                    <settings.flexform.settings.adaptiveHeight>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.adaptiveHeight</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.adaptiveHeight>
+
+                    <settings.flexform.settings.adaptiveHeightSpeed>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.adaptiveHeightSpeed</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>500</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.adaptiveHeightSpeed>
+
+                    <settings.flexform.settings.video>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.video</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.video>
+
+                    <settings.flexform.settings.responsive>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.responsive</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.responsive>
+
+                    <settings.flexform.settings.useCSS>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.useCSS</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.useCSS>
+
+                    <settings.flexform.settings.preloadImages>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.preloadImages</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">all</numIndex>
+                                        <numIndex index="1">all</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">visible</numIndex>
+                                        <numIndex index="1">visible</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <default>visible</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.preloadImages>
+
+                    <settings.flexform.settings.touchEnabled>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.touchEnabled</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.touchEnabled>
+
+                    <settings.flexform.settings.swipeThreshold>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.swipeThreshold</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>50</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.swipeThreshold>
+
+                    <settings.flexform.settings.oneToOneTouch>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.oneToOneTouch</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.oneToOneTouch>
+
+                    <settings.flexform.settings.preventDefaultSwipeX>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.preventDefaultSwipeX</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.preventDefaultSwipeX>
+
+                    <settings.flexform.settings.preventDefaultSwipeY>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.settings.preventDefaultSwipeY</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.preventDefaultSwipeY>
+                </el>
+            </ROOT>
+        </settings>
+
+        <pager>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.pager</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.settings.pager>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.pager.pager</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.pager>
+
+                    <settings.flexform.settings.pagerType>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.pager.pagerType</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">full</numIndex>
+                                        <numIndex index="1">full</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">short</numIndex>
+                                        <numIndex index="1">short</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <default>full</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.pagerType>
+
+                    <settings.flexform.settings.pagerShortSeparator>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.pager.pagerShortSeparator</label>
+                            <config>
+                                <type>input</type>
+                                <size>8</size>
+                                <eval>string</eval>
+                                <default>/</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.pagerShortSeparator>
+                </el>
+            </ROOT>
+        </pager>
+
+        <controls>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.settings.controls>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.controls</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.controls>
+
+                    <settings.flexform.settings.nextText>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.nextText</label>
+                            <config>
+                                <type>input</type>
+                                <size>8</size>
+                                <eval>string</eval>
+                                <default>Next</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.nextText>
+
+                    <settings.flexform.settings.prevText>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.prevText</label>
+                            <config>
+                                <type>input</type>
+                                <size>8</size>
+                                <eval>string</eval>
+                                <default>Prev</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.prevText>
+
+                    <settings.flexform.settings.autoControls>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.autoControls</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoControls>
+
+                    <settings.flexform.settings.startText>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.startText</label>
+                            <config>
+                                <type>input</type>
+                                <size>8</size>
+                                <eval>string</eval>
+                                <default>Start</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.startText>
+
+                    <settings.flexform.settings.stopText>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.stopText</label>
+                            <config>
+                                <type>input</type>
+                                <size>8</size>
+                                <eval>string</eval>
+                                <default>Stop</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.stopText>
+
+                    <settings.flexform.settings.autoControlsCombine>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.controls.autoControlsCombine</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoControlsCombine>
+                </el>
+            </ROOT>
+        </controls>
+
+        <auto>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.settings.auto>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.auto</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.auto>
+
+                    <settings.flexform.settings.pause>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.pause</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>4000</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.pause>
+
+                    <settings.flexform.settings.autoStart>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.autoStart</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoStart>
+
+                    <settings.flexform.settings.autoDirection>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.autoDirection</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">next</numIndex>
+                                        <numIndex index="1">next</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">prev</numIndex>
+                                        <numIndex index="1">prev</numIndex>
+                                    </numIndex>
+                                </items>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <default>next</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoDirection>
+
+                    <settings.flexform.settings.autoHover>
+                        <TCEforms>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.autoHover</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoHover>
+
+                    <settings.flexform.settings.autoDelay>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.auto.autoDelay</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.autoDelay>
+                </el>
+            </ROOT>
+        </auto>
+
+        <carousel>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.carousel</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.settings.minSlides>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.carousel.minSlides</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.minSlides>
+
+                    <settings.flexform.settings.maxSlides>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.carousel.maxSlides</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.maxSlides>
+
+                    <settings.flexform.settings.moveSlides>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.carousel.moveSlides</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.moveSlides>
+
+                    <settings.flexform.settings.slideWidth>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:bxslider/Resources/Private/Language/locallang_db.xml:flexform.carousel.slideWidth</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <eval>int</eval>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.settings.slideWidth>
+                </el>
+            </ROOT>
+        </carousel>
+
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,20 @@
+# cat=bxslider/general/010; type=boolean; label= Include JQuery?: You can enable or disable JQuery in your project
+plugin.tx_bxslider.includeJquery = 1
+
+# cat=bxslider/general/010; type=string; label= JQuery Source: Change jQuery Source - per default it will be loaded from googleapis.com
+plugin.tx_bxslider.jquery = http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
+
+plugin.tx_bxslider {
+	view {
+		# cat=plugin.tx_bxslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:bxslider/Resources/Private/Templates/
+		# cat=plugin.tx_bxslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:bxslider/Resources/Private/Partials/
+		# cat=plugin.tx_bxslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:bxslider/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_bxslider//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

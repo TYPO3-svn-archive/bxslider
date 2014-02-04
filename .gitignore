@@ -1,0 +1,11 @@
+ass-cache*
+.*.swo
+.*.swp
+nbproject
+.idea
+CVS
+.cvsignore
+.#*
+.DS_Store
+._*
+Thumbs.db

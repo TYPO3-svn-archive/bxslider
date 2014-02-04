@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'bxslider'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_bxslider_domain_model_bxslider">Bx Slider</label>
+			<label index="tx_bxslider_domain_model_bxslider.name">Name</label>
+			<label index="tx_bxslider_domain_model_bxslider.images">Images</label>
+
+			<label index="tx_bxslider_domain_model_bxsliderimage">Bx Slider Image</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.title">Title</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.link">Link</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.image">Image</label>
+
+            <label index="flexform.general">General</label>
+            <label index="flexform.general.form">Choose a bxSlider</label>
+
+            <label index="flexform.settings">Settings</label>
+            <label index="flexform.settings.mode">Mode - Type of transition between slides</label>
+            <label index="flexform.settings.speed">Speed - Slide transition duration (in ms)</label>
+            <label index="flexform.settings.slideMargin">slideMargin - Margin between each slide</label>
+            <label index="flexform.settings.startSlide">startSlide - Starting slide index (zero-based)</label>
+            <label index="flexform.settings.randomStart">randomStart - Start slider on a random slide</label>
+            <label index="flexform.settings.infiniteLoop">infiniteLoop - If true, clicking "Next" while on the last slide will transition to the first slide and vice-versa</label>
+            <label index="flexform.settings.hideControlOnEnd">hideControlOnEnd - If true, "Next" control will be hidden on last slide and vice-versa. Only used when infiniteLoop: false</label>
+            <label index="flexform.settings.captions">captions - Include image captions</label>
+            <label index="flexform.settings.ticker">ticker - Use slider in ticker mode</label>
+            <label index="flexform.settings.tickerHover">tickerHover - Ticker will pause when mouse hovers over slider</label>
+            <label index="flexform.settings.adaptiveHeight">adaptiveHeight - Dynamically adjust slider height based on each slide's height</label>
+            <label index="flexform.settings.adaptiveHeightSpeed">adaptiveHeightSpeed - Slide height transition duration (in ms)</label>
+            <label index="flexform.settings.video">video - If any slides contain video, set this to true</label>
+            <label index="flexform.settings.responsive">responsive - Enable or disable auto resize of the slider</label>
+            <label index="flexform.settings.useCSS">useCSS - If true, CSS transitions will be used for horizontal and vertical slide animations. If false, jQuery animate() will be used.</label>
+            <label index="flexform.settings.preloadImages">preloadImages - If 'all', preloads all images before starting the slider. If 'visible', preloads only images in the initially visible slides before starting the slider (tip: use 'visible' if all slides are identical dimensions)</label>
+            <label index="flexform.settings.touchEnabled">touchEnabled - If true, slider will allow touch swipe transitions</label>
+            <label index="flexform.settings.swipeThreshold">swipeThreshold - Amount of pixels a touch swipe needs to exceed in order to execute a slide transition. Note: only used if touchEnabled: true</label>
+            <label index="flexform.settings.oneToOneTouch">oneToOneTouch - If true, non-fade slides follow the finger as it swipes</label>
+            <label index="flexform.settings.preventDefaultSwipeX">preventDefaultSwipeX - If true, touch screen will not move along the x-axis as the finger swipes</label>
+            <label index="flexform.settings.preventDefaultSwipeY">preventDefaultSwipeY - If true, touch screen will not move along the y-axis as the finger swipes</label>
+
+            <label index="flexform.pager">Pager</label>
+            <label index="flexform.pager.pager">pager - If true, a pager will be added</label>
+            <label index="flexform.pager.pagerType">pagerType - If 'full', a pager link will be generated for each slide. If 'short', a x / y pager will be used (ex. 1 / 5)</label>
+            <label index="flexform.pager.pagerShortSeparator">pagerShortSeparator - If pagerType: 'short', pager will use this value as the separating character</label>
+
+            <label index="flexform.controls">Controls</label>
+            <label index="flexform.controls.controls">controls - If true, "Next" / "Prev" controls will be added</label>
+            <label index="flexform.controls.nextText">nextText - Text to be used for the "Next" control</label>
+            <label index="flexform.controls.prevText">prevText - Text to be used for the "Prev" control</label>
+            <label index="flexform.controls.autoControls">autoControls - If true, "Start" / "Stop" controls will be added</label>
+            <label index="flexform.controls.startText">startText - Text to be used for the "Start" control</label>
+            <label index="flexform.controls.stopText">stopText - Text to be used for the "Stop" control</label>
+            <label index="flexform.controls.autoControlsCombine">autoControlsCombine - When slideshow is playing only "Stop" control is displayed and vice-versa</label>
+
+            <label index="flexform.auto">Auto</label>
+            <label index="flexform.auto.auto">auto - Slides will automatically transition</label>
+            <label index="flexform.auto.pause">pause - The amount of time (in ms) between each auto transition</label>
+            <label index="flexform.auto.autoStart">autoStart - Auto show starts playing on load. If false, slideshow will start when the "Start" control is clicked</label>
+            <label index="flexform.auto.autoDirection">autoDirection - The direction of auto show slide transitions</label>
+            <label index="flexform.auto.autoHover">autoHover - Auto show will pause when mouse hovers over slider</label>
+            <label index="flexform.auto.autoDelay">autoDelay - Time (in ms) auto show should wait before starting</label>
+
+            <label index="flexform.carousel">Carousel</label>
+            <label index="flexform.carousel.minSlides">minSlides - The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size</label>
+            <label index="flexform.carousel.maxSlides">maxSlides - The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size</label>
+            <label index="flexform.carousel.moveSlides">moveSlides - The number of slides to move on transition. If zero (default), the number of fully-visible slides will be used</label>
+            <label index="flexform.carousel.slideWidth">slideWidth - The width of each slide. This setting is required for all horizontal carousels</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

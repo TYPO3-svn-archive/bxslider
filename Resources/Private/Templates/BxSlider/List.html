@@ -1,0 +1,18 @@
+<f:layout name="Default" />
+<f:section name="main">
+    <f:for each="{bxSliders}" as="bxSlider">
+        <ul class="bxslider" id="bxslider{bxSlider.uid}">
+            <f:for each="{bxSlider.images}" as="slide">
+                <li>
+                    <f:image src="uploads/tx_bxslider/{slide.image}" alt="{slide.title}" title="{slide.title}" />
+                </li>
+            </f:for>
+        </ul>
+    </f:for>
+    <script type="text/javascript">
+        var sliderSettings = <f:format.htmlentitiesDecode>{sliderSettings}</f:format.htmlentitiesDecode>;
+        $(document).ready(function() {
+            $('.bxslider').bxSlider(sliderSettings);
+        });
+    </script>
+</f:section>

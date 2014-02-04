@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the bxSlider extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_bxslider_domain_model_bxslider">BxSlider</label>
+			<label index="tx_bxslider_domain_model_bxslider.name">name</label>
+			<label index="tx_bxslider_domain_model_bxslider.images">images</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage">BxSliderImage</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.title">title</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.link">link</label>
+			<label index="tx_bxslider_domain_model_bxsliderimage.image">image</label>
+		</languageKey>
+	</data>
+</T3locallang>
