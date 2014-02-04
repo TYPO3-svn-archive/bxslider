@@ -9,9 +9,8 @@
             </f:for>
         </ul>
         <script type="text/javascript">
-            var sliderSettings = <f:format.htmlentitiesDecode>{sliderSettings}</f:format.htmlentitiesDecode>;
             $(document).ready(function() {
-                $('.bxslider#bxslider<f:format.htmlentitiesDecode>{bxSlider.uid}</f:format.htmlentitiesDecode>').bxSlider(sliderSettings);
+                $('.bxslider#bxslider<f:format.htmlentitiesDecode>{bxSlider.uid}</f:format.htmlentitiesDecode>').bxSlider(<f:format.htmlentitiesDecode>{sliderSettings}</f:format.htmlentitiesDecode>);
             });
         </script>
     </f:for>
